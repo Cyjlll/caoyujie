@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="js/flexslider.css"/>
+		<!--<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		.flexslider .slides img {
+    width: 2000px;
+    height: 600px;
+    display: block;
+   
+},
+.slides {
+    height: 1000px;
+    width: 200px;
+     display: block;
+}
+	</style>
+	<body>
+		<div class="flexslider">
+  	<ul class="slides">
+    	<li><img src="img/cam-1.jpg" /></li>
+    	<li><img src="img/cam-2.jpg" /></li>
+        <li><img src="img/cam-3.jpg" /></li>
+        <li><img src="img/cam-4.jpg" /></li>
+  	</ul>
+</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+           $(".flexslider").flexslider({
+           	animation: "slide",
+           	mousewheel: true, 
+           	directionNav: true,
+           	animationLoop: true, 
+           	controlNav: true,
+           	direction:"vertical",
+           	slideshowSpeed: 1000, 
+            touch:true,
+           	keyboardNav: true,
+           	
+           });
+});
+	</script>
+</html>

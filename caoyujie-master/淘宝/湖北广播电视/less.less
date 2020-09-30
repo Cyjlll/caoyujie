@@ -1,0 +1,23 @@
+@caoyujie:caoyujie;
+@width:299px;
+
+@rules:{
+    color: red;
+    background-color: green;
+    width: @width;
+    height: 200px;
+}
+#@{caoyujie}{
+    @rules();
+
+}
+.pp{
+    &:after{
+        content: "hishabi";
+        color: pink;
+    }
+    span{
+        color: red;
+    }
+}
+
